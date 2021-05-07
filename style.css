@@ -3,7 +3,7 @@ body {
     margin:auto;
     margin-top: 0%;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
 }
 
@@ -85,6 +85,7 @@ nav a {
     /* display:flex;
     justify-content: space-around; */
     text-align: center;
+    color: #000;
     /* width: 100%; */
     text-decoration: none;
     padding-top: 40px;
@@ -153,6 +154,7 @@ nav a:focus {
 
 .filter {
     display: flex;
+    align-items: center;
 }
 
 .filter h1 {
@@ -163,12 +165,122 @@ nav a:focus {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
-    
+    padding: 0;
 }
 
 .filter-list li {
-    text-decoration: none;
+    height: 40px;;
+    margin: 10px;
+    padding: 0 15px 0 0;
+    list-style: none;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+
 }
 
+.filter-link {
+    margin: 0;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.filter-icon {
+    color: #0065FC;
+    font-size: 17px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid #DEEBFF;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+}
+
+.nbr-info {
+    display: flex;
+    align-items: center;
+}
+
+.nbr-info i {
+    padding: 10px;
+    color: #0065fc;
+    font-size: 15px;
+}
+
+.accomodation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.main-accomodation {
+    flex: 2 1 0;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+    padding: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+.first-block-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second-block-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.accomodation-card {
+    width: 200px;
+    margin: 10px;
+    padding: 2px 2px 2px 2px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.accomodation-card img {
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accomodation-card h3 {
+    margin: 0;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+}
+
+.accomodation-card p {
+    margin: 0;
+    padding: 0 5px 5px 15px;
+    font-size: 10px;
+}
+
+.stars {
+    padding: 0 5px 5px 15px;
+    font-size: 10px;
+}
+
+.most-popular {
+    flex: 1 1 0;
+    margin-left: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+.large-accomodation-card img {
+    width: 100%;
+}
 
