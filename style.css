@@ -290,6 +290,7 @@ nav a, .register-link {
 
 .accomodation-card {
     max-width: 250px;
+    width: -moz-max-content;
 }
 
 .accomodation-card, .large-accomodation-card {
@@ -302,6 +303,8 @@ nav a, .register-link {
 .accomodation-card img {
     object-fit: cover;
     width: 100%;
+    max-width: 100%;
+    width: -moz-max-content;
     height: 100px;
     margin: 0;
     padding: 0;
@@ -446,6 +449,8 @@ nav a, .register-link {
 .activity-card img {
     object-fit: cover;
     width: 100%;
+    max-width: 100%;
+    width: -moz-max-content;
     border-radius: 15px 15px 0 0;
 }
 
