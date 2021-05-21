@@ -11,14 +11,26 @@ header, section, .footer-content {
     margin:auto;
 }
 
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1400px) {
     header, section, .footer-content {
-        width: 80%
+        width: 85%
     }
 }
 
 h2 {
     margin-bottom: 20px;
+    font-weight: 800;
+}
+
+h3 {
+    margin: 0;
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.price {
+    font-weight: 700;
 }
 
 /**************************************/
@@ -67,23 +79,39 @@ nav a, .register-link {
     padding-top: 50px;
 }
 
-.menu a:focus {
+.menu nav a:hover {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        border:none;
+        border-top: 2px solid #f2f2f2;
+    }
+    to {
+        border:none;
+        border-top: 2px solid #0065fc;
+    }
+}
+
+.menu nav a:focus {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
 
 .register-link {
     color: #0065FC;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .main-title h1 {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 30px;;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
     .logo-nav {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
@@ -100,11 +128,39 @@ nav a, .register-link {
         grid-column: 1 / 4;
         grid-row: 2;
     }
+
     .menu nav a {
         border-bottom: 2px solid #f2f2f2;
     }
-    .menu nav a:focus {
+    .menu nav a:hover {
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            border:none;
+            border-bottom: 2px solid #f2f2f2;
+        }
+        to {
+            border:none;
+            border-bottom: 2px solid #0065fc;
+        }
+    }
+
+    /* .menu nav a {
         border: none;
+        border-bottom: 2px solid #f2f2f2;
+        transition-property: border-bottom;
+        transition-duration: 2s;
+    }
+
+    .menu nav a:hover {
+        border: none;
+        border-bottom: 2px solid #0065FC;
+    } */
+
+    .menu nav a:focus {
         border-bottom: 2px solid #0065FC;
     }
 }
@@ -134,7 +190,7 @@ nav a, .register-link {
     border-left: none;
     border-right: none;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .large-search-btn, .tiny-search-btn {
@@ -147,13 +203,13 @@ nav a, .register-link {
     border-radius : 0 15px 15px 0;
 }
 
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 576px) {
     .tiny-search-btn {
         display: none;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 575px) {
     .large-search-btn {
         display: none;
     }
@@ -165,7 +221,7 @@ nav a, .register-link {
 /**************************************/
 /************** FILTERS ***************/
 
-.filter-list li, .filter-icon  {
+.filter-list li  {
     border-radius: 30px;
 }
 
@@ -177,35 +233,28 @@ nav a, .register-link {
 }
 
 .filter h1 {
-    font-size: 1.2em;
     margin-right: 20px;
+    font-size: 1.2em;
+    font-weight: 800;
 }
 
 .filter-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    row-gap: 20px;
+    margin: 0;
     padding: 0;
 }
 
 .filter-list li {
-    height: 40px;;
-    margin: 10px;
-    padding: 0 15px 0 0;
+    height: 40px;
+    vertical-align:middle;
+    line-height: 40px;
+    margin-right: 20px;
+    padding-right: 15px;
     list-style: none;
     border: 2px solid #f2f2f2;
     border-left: none;
-}
-
-.filter-link {
-    margin: 0;
-    font-size: 1.2em;
-    color: #000;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.filter-list li {
     background: linear-gradient(to right, #DEEBFF  50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -216,12 +265,25 @@ nav a, .register-link {
     background-position: left bottom;
 }
 
+.filter-link {
+    margin-left:10px;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+}
+
 .filter-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: -3px;
+    text-align:center;
+    vertical-align:middle;
+    line-height: 40px;
     color: #0065FC;
-    font-size: 17px;
-    margin-right: 10px;
-    padding: 10px;
+    font-size: 18px;
     border: 2px solid #DEEBFF;
+    border-radius: 50%;
     background-color: #DEEBFF;
 }
 
@@ -231,6 +293,7 @@ nav a, .register-link {
 .nbr-info {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .nbr-info i {
@@ -260,21 +323,21 @@ nav a, .register-link {
 }
 
 .main-accomodation {
-    flex: 3 1 0;
+    flex: 5;
     max-width: 100%;
     background-color: #f2f2f2;
     padding: 20px;
     border: 2px solid #f2f2f2;
 }
 
-@media screen and (max-width: 621px) {
+@media screen and (max-width: 575px) {
     .main-accomodation {
         background-color: #fff;
         border: none;
     }
 }
 
-@media screen and (min-width: 622px) {
+@media screen and (min-width: 576px) {
     .most-popular {
         margin-left: auto;
     }
@@ -282,7 +345,7 @@ nav a, .register-link {
 
 .all-card {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 20px;
@@ -290,6 +353,7 @@ nav a, .register-link {
 
 .accomodation-card {
     max-width: 250px;
+    min-width: 200px;
     width: -moz-max-content;
 }
 
@@ -304,17 +368,10 @@ nav a, .register-link {
     object-fit: cover;
     width: 100%;
     max-width: 100%;
-    width: -moz-max-content;
-    height: 100px;
+    max-height: 100px;
     margin: 0;
     padding: 0;
     border-radius: 10px 10px 0 0;
-}
-
-.accomodation-card h3 {
-    margin: 0;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
 }
 
 .accomodation-card p, .main-accomodation-stars {
@@ -342,7 +399,7 @@ nav a, .register-link {
     text-decoration: none;
     color: #000;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .more a:focus {
@@ -350,6 +407,7 @@ nav a, .register-link {
 }
 
 .most-popular {
+    flex: 2;
     align-self: stretch;
     background-color: #f2f2f2;
     padding: 20px;
@@ -358,6 +416,7 @@ nav a, .register-link {
 
 .most-popular-card {
     max-width: 100%;
+    min-width: 200px;
     margin : auto;
 }
 
@@ -381,6 +440,10 @@ nav a, .register-link {
     background-color: #fff;
 }
 
+.large-accomodation-card h3 {
+    padding-top: 10px;
+}
+
 .large-accomodation-card img {
     object-fit: cover;
     width: 120px;
@@ -390,12 +453,6 @@ nav a, .register-link {
     border-radius: 10px 0 0 10px;
 }
 
-.large-accomodation-card h3 {
-    margin: 0;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-}
-
 .large-accomodation-card p {
     margin: 0;
     padding: 2px 5px 5px 15px;
@@ -403,11 +460,12 @@ nav a, .register-link {
 }
 
 .large-accomodation-stars {
-    padding: 40px 5px 5px 15px;
+    align-items: baseline;
+    /* padding: 40px 5px 5px 15px; */
     font-size: 10px;
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 575px) {
     .large-accomodation-card img {
         width: 100px;
     }
@@ -423,7 +481,7 @@ nav a, .register-link {
 .activity {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 20px;
 }
 
@@ -466,11 +524,6 @@ nav a, .register-link {
     height: 90px;
 }
 
-.activity div h3 {
-    padding-left: 15px;
-    font-size: 12px;
-}
-
 .card-link, .large-accomodation-card, .normal, .large {
     text-decoration: none;
     color: #000;
@@ -486,7 +539,7 @@ nav a, .register-link {
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 575px) {
     .activity {
         justify-content: center;
     }
