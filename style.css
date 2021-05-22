@@ -348,10 +348,11 @@ nav a, .register-link {
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 20px;
+    column-gap: 10px;
 }
 
 .accomodation-card {
-    min-width: 250px;
+    min-width: 230px;
     max-width: 280px
 }
 
@@ -374,7 +375,7 @@ nav a, .register-link {
 
 .accomodation-card p, .main-accomodation-stars {
     padding: 0 5px 5px 15px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .accomodation-card p {
@@ -390,13 +391,13 @@ nav a, .register-link {
 }
 
 .more {
-    margin-top: 20px;
+    margin: 40px 0 20px 0;
 }
 
 .more a {
     text-decoration: none;
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -444,7 +445,7 @@ nav a, .register-link {
 
 .large-accomodation-card img {
     object-fit: cover;
-    width: 120px;
+    width: 100px;
     height: 110px;
     margin: 0;
     padding: 0;
@@ -454,12 +455,17 @@ nav a, .register-link {
 .large-accomodation-card p {
     margin: 0;
     padding: 2px 5px 5px 15px;
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.info-accomodation {
+    position: relative;
 }
 
 .large-accomodation-stars {
-    align-items: baseline;
-    /* padding: 40px 5px 5px 15px; */
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 10px 15px;
     font-size: 10px;
 }
 
@@ -481,6 +487,9 @@ nav a, .register-link {
 /**************************************/
 /************ ACTIVITIES **************/
 
+#activities {
+    margin-top: 40px;
+}
 
 .activity {
     display: grid;
@@ -495,6 +504,10 @@ nav a, .register-link {
     background-color: #fff;
     max-width: 300px;
     min-width: 150px;
+}
+
+.activity-card h3 {
+    padding: 13px 0 12px 15px;
 }
 
 .activity-card-1 {
@@ -634,8 +647,8 @@ nav a, .register-link {
     }
     .activity-card {
         min-width: 250px;
-        max-width: 280px;
-        height: 140px;
+        max-width: 250px;
+        height: 150px;
         margin-bottom: 30px;
     }
     .activity-card img {
@@ -656,7 +669,7 @@ footer {
     flex-direction: row;
     align-items: space-between;
     flex-wrap: wrap;
-    column-gap: 20px;
+    column-gap: 200px;
     row-gap: 20px;
     padding: 20px;
 }
@@ -672,5 +685,10 @@ footer {
 .footer-item-list li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+.footer-item-list a {
+    text-decoration: none;
+    color: #000;
 }
 
