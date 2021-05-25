@@ -3,7 +3,8 @@
 
 
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reservia, trouvez votre hébergement pour des vacances de rêve</title>
         <script src="https://kit.fontawesome.com/7a1a2f8e97.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,20 +39,18 @@
         </header>
 
         <!-- Champ de recherche par ville -->
-        <section class="search">
-            <div class="search-city">
-                <div>
-                    <i class="fas fa-map-marker-alt map-marker"></i>
-                </div>
-                <input class="search-input" type="text" name="Rechercher" placeholder="Marseille, France">
-                <button class="large-search-btn">Rechercher</button>
-                <button class="tiny-search-btn"><i class="fas fa-search"></i></button>
+        <div class="search-city">
+            <div>
+                <i class="fas fa-map-marker-alt map-marker"></i>
             </div>
-        </section>
+            <input class="search-input" type="text" name="Rechercher" placeholder="Marseille, France">
+            <button class="large-search-btn">Rechercher</button>
+            <button class="tiny-search-btn"><i class="fas fa-search"></i></button>
+        </div>
 
         <!-- Filtres par thème -->
         <section class="filter">
-            <h1>Filtres</h1>
+            <h2>Filtres</h2>
             <ul class="filter-list">
                 <li><i class="filter-icon fas fa-money-bill-wave"></i><a class="filter-link" href="#">Economique</a></li>
                 <li><i class="filter-icon fas fa-child"></i><a class="filter-link" href="#">Familial</a></li>
@@ -59,12 +58,10 @@
                 <li><i class="filter-icon fas fa-dog"></i><a class="filter-link" href="#">Animaux autorisés</a></li>
             </ul>
         </section>
-        <section class="info">
-            <div class="nbr-info">
-                <i class="fas fa-info-circle"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-        </section>
+        <div class="nbr-info">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
 
         <!-- Accomodations cards -->
         <section id="accomodations" class="accomodation">
@@ -270,23 +267,23 @@
                 <div class="footer-item">
                     <h4>A propos</h4>
                     <ul class="footer-item-list">
-                        <a href="#footer"><li>Fonctionnement du site</li></a>
-                        <a href="#footer"><li>Conditions générales de vente</li></a>
-                        <a href="#footer"><li>Données et confidentialité</li></a>
+                        <li><a href="#footer">Fonctionnement du site</a></li>
+                        <li><a href="#footer">Conditions générales de vente</a></li>
+                        <li><a href="#footer">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
                     <h4>Nos hébergements</h4>
                     <ul class="footer-item-list">
-                        <a href="#footer"><li>Charte qualité</li></a>
-                        <a href="#footer"><li>Soumettre votre hôtel</li></a>
+                        <li><a href="#footer">Charte qualité</a></li>
+                        <li><a href="#footer">Soumettre votre hôtel</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
                     <h4>Assistance</h4>
                     <ul class="footer-item-list">
-                        <a href="#footer"><li>Centre d'aide</li></a>
-                        <a href="#footer"><li>Nous contacter</li></a>
+                        <li><a href="#footer">Centre d'aide</a></li>
+                        <li><a href="#footer">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>
